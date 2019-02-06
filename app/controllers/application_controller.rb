@@ -25,9 +25,6 @@ class ApplicationController < Sinatra::Base
     #    @user = Helpers.current_user(session)
       if @user = User.find_by(id: session[:user_id])
 
-        binding.pry
-
-
 
        erb :account
     else
