@@ -8,7 +8,6 @@ class Helpers
 
   def self.is_logged_in?(session)
    !!current_user(session)
-   binding.pry
   end
 
 end
